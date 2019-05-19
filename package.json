@@ -1,0 +1,22 @@
+{
+  "name": "chadgotis",
+  "version": "1.0.0",
+  "description": "Official Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadgotis/chadGotis.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Chadric M. Gotis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chadgotis/chadGotis/issues"
+  },
+  "homepage": "https://github.com/chadgotis/chadGotis#readme"
+}
