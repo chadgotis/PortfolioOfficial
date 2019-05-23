@@ -4,9 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>ChadGotis</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="container">
+      <nav>
+        <div class="logo"><span>Chad</span>Gotis</div>
+        <ul>
+          <li>
+            <a href="#">Home<span>.</span></a>
+          </li>
+          <li>
+            <a href="#">Works<span>.</span></a>
+          </li>
+          <li>
+            <a href="#">About Me<span>.</span></a>
+          </li>
+          <li>
+            <a href="#">Contact Me<span>.</span></a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <h2 class="typing"></h2>
+        <p class="wow fadeIn delay-3s">a Web Portfolio</p>
+        <img src="img/chevron-down.png" alt="arrow" class="arrow" />
+      </main>
+      <section
+        class="background wow fadeInUp"
+        data-wow-duration="1s"
+        data-wow-offset="100"
+      >
+        <h2>
+          Background
+        </h2>
+        <p>
+          Chad is a Graduate of Bachelor of Science in Computer Science at
+          Wesleyan University-Philippines. He became as an Instructor of both
+          High School and College as soon as he graduates at the said school.
+          Teaching was fun for him, but his passion for creating and developing
+          websites/webapps, hunger for new knowledge of the latest technology
+          cannot be removed from him. Thus he starts his career as a web
+          developer.
+        </p>
+      </section>
+      <section
+        class="skills background wow fadeInUp"
+        data-wow-duration="1s"
+        data-wow-offset="100"
+      >
+        <h2>Skills</h2>
+        <p>
+          Frontend development kit like: HTML, CSS, SASS, JavaScript,
+          React/Redux, Adobe XD, Adobe Photoshop. <br />
+          Backend Development Kits: PHP, MongoDB, NodeJs, ExpressJS, SQL.<br />
+          Others: Github
+        </p>
+      </section>
+      <section
+        class="projects wow fadeInUp"
+        data-wow-duration="1s"
+        data-wow-offset="100"
+      >
+        <h2>Projects</h2>
+        <p>
+          Here's some example Projects that would be worth checking out if you
+          are planning to check my skills as a web developer.
+        </p>
+        <button>Take a Look</button>
+      </section>
+      <p class="got wow fadeInUp" data-wow-duration="1s" data-wow-offset="100">
+        Got yourself a project?
+      </p>
+      <hr class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="100" />
+      <footer class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="100">
+        <div class="connect">
+          <span>Connect With Me</span>
+          <p>ig @ChadGotis</p>
+        </div>
+        <div class="follow">
+          <span>Follow Me</span>
+          <div>
+            <a href="#">.fb</a>
+            <a href="#">.ln</a>
+            <a href="#">.tw</a>
+            <a href="#">.git</a>
+          </div>
+        </div>
+        <div class="hello">
+          <span>Say Hello</span>
+          <p>Chadgotis97@gmail.com</p>
+        </div>
+      </footer>
+      <br /><br /><br /><br />
+    </div>
+    <script src="js/main.js"></script>
+    <script src="node_modules/wow.js/dist/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

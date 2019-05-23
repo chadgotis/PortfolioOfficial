@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/chadgotis/chadGotis/issues"
   },
-  "homepage": "https://github.com/chadgotis/chadGotis#readme"
+  "homepage": "https://github.com/chadgotis/chadGotis#readme",
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "ionicons": "^4.5.8",
+    "wow.js": "^1.2.2"
+  }
 }

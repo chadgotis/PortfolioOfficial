@@ -1,0 +1,179 @@
+// colors
+$background: #262626;
+$font: #ffffff;
+$font2: #707070;
+// config
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "montserrat";
+  color: $font;
+  body {
+    background: $background;
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  box-sizing: border-box;
+}
+// navigation
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  top: 0;
+  position: relative;
+  .logo {
+    font-size: 1.4rem;
+    span {
+      font-weight: 600;
+    }
+  }
+  ul {
+    display: flex;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        padding: 0.45rem;
+        margin: 0 0.45rem;
+      }
+    }
+  }
+}
+// main
+main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  position: relative;
+  h2 {
+    margin: 0.45rem;
+    font-size: 4rem;
+    font-weight: 300;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  img {
+    width: 1.4rem;
+    align-self: center;
+    // transform: translate(0rem, 6rem);
+    opacity: 0;
+  }
+}
+// background class
+.background,
+.skills,
+.projects {
+  background: url(../img/image1.jpg) no-repeat 100% 0%;
+  background-size: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    background: $background;
+    width: 500px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 350;
+    margin-top: 40px;
+  }
+  p {
+    width: 400px;
+  }
+}
+.skills {
+  background: url(../img/image2.jpg) no-repeat;
+  background-size: 600px;
+
+  h2 {
+    transform: translateX(100%);
+  }
+  p {
+    align-self: flex-end;
+    // text-align: right;
+  }
+}
+.projects {
+  background: url(../img/image3.jpg) no-repeat 100% 0%;
+  background-size: 600px;
+
+  button {
+    width: 120px;
+    margin: 1rem 0rem;
+    padding: 0.5rem;
+    background: $background;
+    border: 1px solid $font;
+    cursor: pointer;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  color: $font2;
+  div {
+    span {
+      color: $font2;
+    }
+    * {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+.got {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  color: $font2;
+}
+.typing::after {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 2px;
+  height: 80px;
+  margin-left: 4px;
+  animation: blink 0.5s infinite ease;
+}
+
+.arrow {
+  animation-name: arrow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+// keyframe animation
+@keyframes arrow {
+  0% {
+    transform: translate(0rem, 6rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0rem, 12rem);
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
