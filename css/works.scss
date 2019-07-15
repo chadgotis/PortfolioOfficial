@@ -1,0 +1,12 @@
+// media query
+@import "media";
+// colors
+@import "variables";
+// config
+@import "config";
+// navigation
+@import "navigation";
+
+.active {
+  transform: translateX(0%);
+}

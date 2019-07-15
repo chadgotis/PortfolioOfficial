@@ -1,48 +1,15 @@
+// media query
+@import "media";
 // colors
-$background: #262626;
-$font: #ffffff;
-$font2: #707070;
+@import "variables";
 // config
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "montserrat";
-  color: $font;
-  body {
-    background: $background;
-  }
-}
-.container {
-  margin: 0 auto;
-  max-width: 1100px;
-  box-sizing: border-box;
-}
+@import "config";
 // navigation
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  top: 0;
-  position: relative;
-  .logo {
-    font-size: 1.4rem;
-    span {
-      font-weight: 600;
-    }
-  }
-  ul {
-    display: flex;
-    li {
-      list-style-type: none;
-      a {
-        text-decoration: none;
-        padding: 0.45rem;
-        margin: 0 0.45rem;
-      }
-    }
-  }
-}
+@import "navigation";
 // main
+@import "loader";
+// loader
+
 main {
   text-align: center;
   display: flex;
@@ -74,6 +41,11 @@ main {
   height: 500px;
   display: flex;
   flex-direction: column;
+  @include for-phone {
+    height: 400px;
+    padding: 1rem;
+    margin: 1rem;
+  }
   h2 {
     background: $background;
     width: 500px;
@@ -82,9 +54,18 @@ main {
     font-size: 4rem;
     font-weight: 350;
     margin-top: 40px;
+    @include for-phone {
+      width: 100%;
+    }
   }
   p {
     width: 400px;
+    @include for-phone {
+      background: rgba(31, 31, 31, 0.8);
+      align-self: center;
+      width: 100%;
+      padding: 1rem;
+    }
   }
 }
 .skills {
@@ -93,6 +74,9 @@ main {
 
   h2 {
     transform: translateX(100%);
+    @include for-phone {
+      transform: translateX(0%);
+    }
   }
   p {
     align-self: flex-end;
@@ -117,6 +101,11 @@ footer {
   justify-content: space-around;
   padding: 1rem;
   color: $font2;
+  @include for-phone {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   div {
     span {
       color: $font2;
@@ -124,6 +113,9 @@ footer {
     * {
       margin-top: 1rem;
       text-align: center;
+      @include for-phone {
+        margin: 2rem;
+      }
     }
     a {
       text-decoration: none;
@@ -176,4 +168,20 @@ footer {
   100% {
     opacity: 1;
   }
+}
+
+// @keyframes linkFade {
+//   from {
+//     opacity: 0;
+//     transform: translateX(50px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateX(0px);
+//   }
+// }
+
+//Active
+.active {
+  transform: translateX(0%);
 }

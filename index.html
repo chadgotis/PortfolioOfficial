@@ -9,6 +9,11 @@
     <title>ChadGotis</title>
   </head>
   <body>
+    <div class="loader">
+      <div class="anim1"></div>
+      <div class="anim2"></div>
+      <div class="anim3"></div>
+    </div>
     <div class="container">
       <nav>
         <div class="logo"><span>Chad</span>Gotis</div>
@@ -17,16 +22,21 @@
             <a href="#">Home<span>.</span></a>
           </li>
           <li>
-            <a href="#">Works<span>.</span></a>
+            <a href="pages/works.html">Works<span>.</span></a>
           </li>
           <li>
-            <a href="#">About Me<span>.</span></a>
+            <a href="pages/about.html">About Me<span>.</span></a>
           </li>
           <li>
-            <a href="#">Contact Me<span>.</span></a>
+            <a href="pages/contact.html">Contact Me<span>.</span></a>
           </li>
         </ul>
       </nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
       <main>
         <h2 class="typing"></h2>
         <p class="wow fadeIn delay-3s">a Web Portfolio</p>
@@ -35,38 +45,36 @@
       <section
         class="background wow fadeInUp"
         data-wow-duration="1s"
-        data-wow-offset="100"
+        data-wow-offset="50"
       >
         <h2>
           Background
         </h2>
         <p>
-          Chad is a Graduate of Bachelor of Science in Computer Science at
-          Wesleyan University-Philippines. He became as an Instructor of both
-          High School and College as soon as he graduates at the said school.
-          Teaching was fun for him, but his passion for creating and developing
-          websites/webapps, hunger for new knowledge of the latest technology
-          cannot be removed from him. Thus he starts his career as a web
-          developer.
+          Hi my name is Chad! I'm a graduate of Bachelor of Science in Computer
+          Science at Wesleyan University-Philiippines. As soon as I graduated, I
+          worked as a Computer Teacher at my Alma-mater. But my passion to
+          create, and develop web apps/ Website is calling for me. Thus I'm
+          hoping to work as a Web Developer.
         </p>
       </section>
       <section
         class="skills background wow fadeInUp"
         data-wow-duration="1s"
-        data-wow-offset="100"
+        data-wow-offset="50"
       >
-        <h2>Skills</h2>
+        <h2>Skillset</h2>
         <p>
-          Frontend development kit like: HTML, CSS, SASS, JavaScript,
-          React/Redux, Adobe XD, Adobe Photoshop. <br />
-          Backend Development Kits: PHP, MongoDB, NodeJs, ExpressJS, SQL.<br />
+          Frontend: HTML, CSS, SASS, JavaScript, React/Redux, Adobe XD, Adobe
+          Photoshop. <br />
+          Backend: PHP, MongoDB, NodeJs, ExpressJS, SQL.<br />
           Others: Github
         </p>
       </section>
       <section
         class="projects wow fadeInUp"
         data-wow-duration="1s"
-        data-wow-offset="100"
+        data-wow-offset="50"
       >
         <h2>Projects</h2>
         <p>
@@ -75,11 +83,11 @@
         </p>
         <button>Take a Look</button>
       </section>
-      <p class="got wow fadeInUp" data-wow-duration="1s" data-wow-offset="100">
+      <p class="got wow fadeInUp" data-wow-duration="1s" data-wow-offset="50">
         Got yourself a project?
       </p>
-      <hr class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="100" />
-      <footer class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="100">
+      <hr class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="50" />
+      <footer class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="50">
         <div class="connect">
           <span>Connect With Me</span>
           <p>ig @ChadGotis</p>
@@ -100,7 +108,9 @@
       </footer>
       <br /><br /><br /><br />
     </div>
+    <script src="js/loader.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
     <script src="node_modules/wow.js/dist/wow.js"></script>
     <script>
       new WOW().init();
