@@ -1,0 +1,26 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  color: $font2;
+  @include for-phone {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    span {
+      color: $font2;
+    }
+    * {
+      margin-top: 1rem;
+      text-align: center;
+      @include for-phone {
+        margin: 2rem;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

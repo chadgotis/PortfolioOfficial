@@ -347,13 +347,13 @@ main img {
   background-size: 600px;
 }
 
-.projects button {
+.projects a {
   width: 120px;
   margin: 1rem 0rem;
   padding: 0.5rem;
   background: #262626;
   border: 1px solid #ffffff;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 footer {

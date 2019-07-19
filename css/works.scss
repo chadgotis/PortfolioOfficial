@@ -6,6 +6,96 @@
 @import "config";
 // navigation
 @import "navigation";
+// loader
+@import "loader";
+
+@import "footer";
+
+.head {
+  width: 100%;
+  background: url(../img/image3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .opacity {
+    margin: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+
+    h2 {
+      font-size: 4rem;
+      font-weight: 350;
+    }
+  }
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.proj {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  margin: 0.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  img {
+    width: 100%;
+    display: block;
+    height: 100%;
+  }
+  h2 {
+    margin: 1rem;
+    text-align: center;
+    min-width: 200px;
+  }
+  em {
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+  }
+  p {
+    margin: 1rem;
+    text-align: center;
+    min-width: 200px;
+  }
+  a {
+    border: 1px solid white;
+    padding: 0.5rem;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    text-align: center;
+  }
+}
+.proj-s {
+  position: absolute;
+  width: 0;
+  height: 300px;
+  background: rgba(73, 53, 88, 0.5);
+  top: 0;
+  left: 0;
+  transition: 0.7s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.proj:hover .proj-s {
+  width: 100%;
+}
 
 .active {
   transform: translateX(0%);
