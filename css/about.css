@@ -317,6 +317,7 @@ section {
 section img {
   width: 400px;
   height: 500px;
+  margin-right: 1rem;
 }
 
 section .about {
@@ -328,7 +329,7 @@ section .about {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 500px;
+  min-height: 500px;
 }
 
 section .about h2 {
@@ -339,6 +340,7 @@ section .about h2 {
 
 section .about p {
   text-align: justify;
+  padding: 1rem;
 }
 
 .active {
