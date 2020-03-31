@@ -314,6 +314,16 @@ section {
           align-items: center;
 }
 
+@media (max-width: 599px) {
+  section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 section img {
   width: 400px;
   height: 500px;

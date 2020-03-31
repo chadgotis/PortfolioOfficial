@@ -40,6 +40,10 @@ section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @include for-phone {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   img {
     width: 400px;
     height: 500px;
