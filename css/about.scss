@@ -31,6 +31,9 @@
     h2 {
       font-size: 4rem;
       font-weight: 350;
+      @include for-phone {
+        font-size: 2rem;
+      }
     }
   }
 }
@@ -48,6 +51,9 @@ section {
     width: 400px;
     height: 500px;
     margin-right: 1rem;
+    @include for-phone {
+      margin-right: 0;
+    }
   }
   .about {
     max-width: 650px;

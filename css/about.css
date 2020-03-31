@@ -297,6 +297,12 @@ footer div a {
   font-weight: 350;
 }
 
+@media (max-width: 599px) {
+  .head .opacity h2 {
+    font-size: 2rem;
+  }
+}
+
 section {
   margin: 1rem auto;
   display: -webkit-box;
@@ -328,6 +334,12 @@ section img {
   width: 400px;
   height: 500px;
   margin-right: 1rem;
+}
+
+@media (max-width: 599px) {
+  section img {
+    margin-right: 0;
+  }
 }
 
 section .about {

@@ -297,6 +297,12 @@ footer div a {
   font-weight: 350;
 }
 
+@media (max-width: 599px) {
+  .head .opacity h2 {
+    font-size: 2rem;
+  }
+}
+
 .active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
